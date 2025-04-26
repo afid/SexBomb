@@ -1,0 +1,8 @@
+*.txt
+forfeits.json
+.vscode/settings.json
+game/*.rpyc
+game/images/accessoires/Template.pdn
+game/images/Guide/*.png
+game/tl/english/images/accessoires/Template.pdn
+
