@@ -1,3 +1,8 @@
+Sex Bomb
+==============================
+
+![Presentation](game/images/pres.png)
+
 Un jeu pour adultes sous Ren'Py
 -------------------------------
 Enfin un vrai jeu pour adultes.
