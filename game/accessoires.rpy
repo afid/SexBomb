@@ -29,7 +29,7 @@ init python:
     # Ces variables sont placées dans le store et seront accessibles partout.
     available_accessoires = [
         Accessoire("Appareil photo", "accessoires/appareil-photo.png", "accessoires/appareil-photo_hover.png"),
-        Accessoire("Baîllon", "accessoires/baillon.png", "accessoires/baillon_hover.png"),
+        Accessoire("Bâillon", "accessoires/baillon.png", "accessoires/baillon_hover.png"),
         Accessoire("Bougie", "accessoires/bougie.png", "accessoires/bougie_hover.png"),
         Accessoire("Champagne", "accessoires/champagne.png", "accessoires/champagne_hover.png"),
         Accessoire("Chantilly", "accessoires/chantilly.png", "accessoires/chantilly_hover.png"),

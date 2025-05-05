@@ -42,7 +42,6 @@ label intro():
                 jump by
         jump exit
 
-
 label new_player():
     h "Bienvenu, permettez moi de me présenter, je me nomme {b}Hitomi{/b} et je serais vôtre guide tout au long de cette partie."
     h "Découvrez un jeu de gages amusants proposant plus de 1000 défis à relever en duo ou en groupe pour dynamiser votre vie sexuelle."
@@ -72,15 +71,15 @@ label accessoires():
     h "Une fois vos accessoires sélectionnés, notre système filtrera automatiquement les gages. Les défis nécessitant des accessoires que vous n'avez pas sélectionnés ne vous seront pas proposés.\nCela garantit que chaque gage est réalisable avec les objets que vous avez choisis."
     # 01 Affiche l’écran pour le choix des accessoires
     call screen accessoires
-
+    # On interdit les retours
+    $ renpy.block_rollback()
 
     # Début des Challenges : Après avoir sélectionné vos accessoires, vous êtes prêts à commencer les challenges ! Amusez-vous et relevez les défis en utilisant les accessoires que vous avez choisis.
 
 
     # 02 On filtre les gages selon les accessoires choisis
     $ filter_challenges()
-    # On interdit les retours
-    $ renpy.block_rollback()
+
 
     if len(selected_accessoires)>20:
         h "Le grand Jeux! Vous avez sélectionné: [', '.join([i.name for i in selected_accessoires])]"
@@ -94,13 +93,14 @@ label accessoires():
     # 03 Affiche l'écran Questionnaire
     scene chambre_02 with Dissolve(1.0)
 
+    # Pour le dev activer Hide hitomi
     show hitomi at place_left
-    # Pour le dev
     # hide hitomi with Dissolve(0.6)
 
     jump questionnaire
     hide hitomi with Dissolve(1.0)
     h "test"
+    
     # 04 Affiche l'écran avec les Gages
     jump gages
 
