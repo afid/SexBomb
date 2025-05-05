@@ -21,5 +21,5 @@ Ce jeu est en cours de développement
 En Attente
 ------------
 
-  L'affectation de gages à chaque joueur
-  Suppression des gages affecté à un joueur pour les autres joueurs, évite la répétition des gages
+-  L'affectation de gages à chaque joueur
+-  Suppression des gages affecté à un joueur pour les autres joueurs, évite la répétition des gages
