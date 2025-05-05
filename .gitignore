@@ -6,3 +6,9 @@ game/images/accessoires/Template.pdn
 game/images/Guide/*.png
 game/tl/english/images/accessoires/Template.pdn
 
+game/renpy_warp_1.34.0_fa4e5e97.rpe.py
+.gitignore
+game/cache/*.rpyb
+game/saves/persistent
+game/tl/english/*.rpyc
+game/tl/None/common.rpymc
